@@ -1,0 +1,390 @@
+/* all pages*/
+
+div.tab{
+	background-color: white;
+}
+/*main items*/
+body {
+	width: 100%;
+}
+
+html{
+	width: 100vw;
+}
+
+#header{
+	width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center top;
+	background-color: #652790;
+}
+
+#footer{
+	width: 100vw;
+	background-repeat: no-repeat;
+}
+
+#tabs{
+	width: 100vw;
+	padding: 0px;
+}
+
+#tabs li{
+	display: table;
+	text-align: center;
+}
+
+.ui-tabs-nav, .ui-corner-all, .ui-helper-reset, .ui-helper-clearfix, .ui-widget-header{
+	margin: none;
+	border: none;
+	padding: none;
+}
+
+.demoHeaders {
+	margin-top: 2em;
+}
+
+/*Jquery ui automatic styles*/
+
+#dialog-link {
+	padding: .4em 1em .4em 20px;
+	text-decoration: none;
+	position: relative;
+}
+
+#dialog-link span.ui-icon {
+	margin: 0 5px 0 0;
+	position: absolute;
+	left: .2em;
+	top: 50%;
+	margin-top: -8px;
+}
+
+#icons {
+	margin: 0;
+	padding: 0;
+}
+
+#icons li {
+	margin: 2px;
+	position: relative;
+	padding: 4px 0;
+	cursor: pointer;
+	float: left;
+	list-style: none;
+}
+
+#icons span.ui-icon {
+	float: left;
+	margin: 0 4px;
+}
+
+.fakewindowcontain .ui-widget-overlay {
+	position: absolute;
+}
+
+select {
+	width: 200px;
+}
+
+/*Fix header*/
+.ui-widget-content{
+	border: none !important;
+	padding-bottom: 0px !important;
+	border:  0px !important;
+}
+
+.pageDescription{
+	text-align: center;
+	font-family: 'Cabin Condensed', sans-serif;
+	font-size: 2.5em;
+	border-bottom: .1em #A9DE69 solid;
+	margin-top: .5em;
+}
+
+#tabs-1, #tabs-2, #tabs-3, #tabs-4, #tabs-5, #tabs-6, #thanksPage{
+	width: 100vw;
+	margin: 0 auto;
+	height: auto !important;
+	padding-top: 1.5em !important;
+}
+
+/*media queries*/
+@media only screen and (min-width: 400px) {
+	#tabs-1, #tabs-2, #tabs-3, #tabs-4, #tabs-5, #tabs-6, #thanksPage {
+		background-color: white;
+		padding: 5em;
+	}
+	#other{
+		background-color: #946baa;
+	}
+}
+
+@media only screen and (min-width: 800px) {
+	#tabs-1, #tabs-2, #tabs-3, #tabs-4, #tabs-5, #tabs-6, #thanksPage {
+		width: 45em;
+	}
+}
+
+
+
+/*div columns*/
+
+div.column, .referenceColumn{
+	width: 13em;
+	margin: 0.6em;
+}
+
+div.table, .referenceTable{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	justify-content: center;
+}
+
+input{
+	width: 10em;
+}
+
+label{
+	font-family: 'Cabin Condensed', sans-serif;
+	margin-top: 1.3em;
+	margin-bottom: .5em;
+}
+
+div label{
+	padding: 0 !important;
+	font-size: 1.4em;
+}
+
+div.radioButtons {
+    display: inline-block;
+    padding: 0;
+}
+
+input.radio{
+	width: 1em;
+	text-align: center;
+}
+
+input[type='radio'] {
+    accent-color: #7c3498;
+}
+
+.smallRadio{
+	margin-top: 1em !important;
+	margin-right: 1em;
+}
+
+/*Error stuff*/
+
+label.error{
+	font-size: 1.2em;
+	color: red;
+	display: block;
+	margin-top: .5em !important;
+}
+
+/*Button stuff*/
+.ui-widget{
+	font-family: 'Cabin Condensed', sans-serif;
+}
+
+.ui-button:focus{
+	background-color: #9ddc5c;
+}
+
+
+.ui-button:hover{
+	background-color: #9ddc5c;
+	color: white;
+}
+
+.ui-tabs{
+	background-color: white;
+	padding-bottom: 1em;
+	border: none;
+	padding-left: 5em;
+}
+
+.ui-tabs .ui-tabs-nav{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+/*Submit button*/
+.ui-button{
+	margin-top: 3em;
+	margin-bottom: 4em;
+	font-size: 1.2em !important;
+	text-align: center;
+	border: none;
+	padding-top: .5em;
+	background-color: #eaf5db;
+	color: black;
+}
+/*Page 1*/
+.specialDescription{
+	text-align: center;
+	font-family: 'Cabin Condensed', sans-serif;
+	font-size: 2.5em;
+	border-bottom: .1em #BA37BA solid;
+	margin-top: .5em;
+}
+
+#firstInfo{
+	font-size: 1.2em;
+	margin-bottom: 2em;
+}
+
+#tabs-1{
+	text-align: center;
+}
+
+#workWhen, #felonyExplain, #authorizedLeave{
+	display: none;
+}
+
+#personalSubmit{
+	margin-top: 1em;
+	margin-bottom: 4em;
+}
+
+#tabs-2, #tabs-3, #tabs-4, #tabs-5, #tabs-6{
+	display: none;
+}
+
+#desired{
+	font-size: 1.2em;
+	height: 2em;
+}
+
+/*page 2*/
+#attendCollegeRadio{
+	margin-top: 1em;
+}
+
+#highSchool, #college{
+	display: none;
+}
+
+#whenLabel, #explainLabel{
+	margin-top: .5em !important;
+}
+
+.highSchool{
+	height: 184.63px;
+}
+
+#fromOne, #fromTwo{
+	margin-bottom: 3.9em;
+}
+
+#highDiplomaShow, #degreeShow{
+	padding: 0 !important;
+	display: none;
+}
+
+#when, #explain,#highDiploma{
+	padding: 8px !important;
+}
+
+#educationSubmit{
+	margin-top: 2em;
+	margin-bottom: 4em;
+}
+
+
+/* Page 3*/
+#tabs-3{
+	text-align: center;
+	padding-top: 0px !important;
+}
+
+.bigReference{
+	padding: .5em;
+	border-bottom: .2em #BA37BA solid;
+	font-size: 1.8em;
+}
+
+
+#tabs-3 p{
+	margin-top: 1em;
+}
+
+#twoTable, #threeTable{
+	display: none;
+	margin-bottom: 1em;
+}
+
+#referenceSubmit{
+	margin-bottom: 4em;
+}
+
+/*Page 4*/
+
+#moveCenter{
+	text-align: center;
+}
+
+#tabs-4{
+	text-align: center;
+}
+
+#previousSubmit{
+	margin-top: 0px;
+	margin-bottom: 4em;
+}
+
+/* Page 5 */
+
+#dischargeError{
+	display: none;
+}
+
+#armyInfo{
+	display: none;
+}
+
+#service{
+	margin-bottom: 2em;
+}
+
+#whyExplain{
+	display: none;
+}
+
+/*Page 6 */
+#agreement{
+	font-family: 'Cabin Condensed', sans-serif;
+	font-size: 2em;
+	text-align: center;
+}
+
+#finalP{
+	text-align: center;
+}
+
+#last{
+	display:none;
+}
+
+#signature{
+	width: 190px;
+	height: 45px;
+	font-size: 2em;
+	font-family: 'Cookie', cursive;
+}
+
+#finalSubmit{
+	margin-top: 2em;
+}
+
+/* Seceret Page*/
+#thanksPage{
+	display: none;
+}
+
+#thanksInfo{
+	text-align: center;
+}

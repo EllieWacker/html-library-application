@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Library Application</title>
+		<meta charset="utf-8">
+		<link rel="shortcut icon" href="css/images/favicon.ico">
+		
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+		
+		<link rel="stylesheet" href="css/jquery-ui.min.css">
+		<link rel="stylesheet" href="css/final.css">
+		
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery-ui.js"></script>
+		<script src="js/jquery.validate.js"></script>
+		<script src="js/jquery.mask.js"></script>
+		<script src="js/final.js"></script>
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Cabin+Condensed&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Cookie&family=Patrick+Hand&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<img id="header" src="css/images/header.png" />
+		</header>
+		
+		<div id="tabs">
+			<ul>
+				<li id="oneButton"><a href="#tabs-1">Applicant Information</a></li>
+				<li id="twoButton"><a href="#tabs-2">Education</a></li>
+				<li id="threeButton"><a href="#tabs-3">References</a></li>
+				<li id="fourButton"><a href="#tabs-4">Past Expierience</a></li>
+				<li id="fiveButton"><a href="#tabs-5">Military Service</a></li>
+				<li id="sixButton"><a href="#tabs-6">Submit</a></li>
+			</ul>
+			<div id="other">
+				<div id="tabs-1" class="tab">
+					<p class="pageDescription">Library Job Application Form</p>
+					<p id="firstInfo">Thank you for filling out the Hiawatha Library job application form! Please enter all of the required information.</p>
+					<p class="specialDescription">Personal Information</p>
+					<form id="personal">
+						<div class="table">
+							<div class="column">
+								<label for="first">First Name</label> </br>
+								<input type="text" name="first" class="required" title="Enter a first name">
+
+								<label for="address">Street Address</label> </br>
+								<input type="text" name="address" class="required" title="Enter an address" /><br />
+								
+								<label for="zip">ZIP Code</label> </br>
+								<input type="text" name="zip" class="required zip" title="Enter a zip code"/><br />
+								
+								<label for="social">Social Security Number</label> </br>
+								<input type="text" name="social" class="required social" title="Enter a social security number"/><br />
+								
+								<div id="workRadio" class="radioButtons">
+									<label class="labelRadio">Have you ever worked for this company?</label>
+									<input name="dot" id="workYes" type="radio" class="radio"/>
+									<label for="workYes" class="smallRadio">Yes</label>
+									<input name="dot" id="workNo" type="radio" class="radio" checked="true"/>
+									<label for="workNo" class="smallRadio">No</label>
+								</div>
+								
+								<div id="workWhen">
+									<label for="when" id="whenLabel">Last Year Worked</label> </br>
+									<input type="text" name="when" class="required when"/><br />
+								</div>
+							</div>
+								
+							<div class="column">
+								<label for="lastName">Last Name</label> </br>
+								<input type="text" name="lastName" id="lastName" class="required" title="Enter a last name"/><br />
+							
+								
+								<label for="city">City</label> </br>
+								<input type="text" name="city" id="city" class="required" title="Enter your city"/><br />
+								
+							
+								<label for="email">Email Address</label> </br>
+								<input type="text" name="email" id="email" class="required email" title="Enter your email"/><br />
+								
+								<label for="desired">Desired Position</label> </br>
+								<select type="text" name="desired" id="desired" class="required" title="Enter your desired salary"/><br /> 
+									<option>Technician</option>  
+									<option>Manager</option>  
+									<option selected="selected">Librarian</option>  
+									<option>Director</option>  
+									<option>Shelver</option>  
+								</select>
+								
+								
+								<div id="Radio" class="radioButtons">
+									<label class="labelRadio">Have you ever been convicted of a felony?</label>
+									<input name="felony" id="felonyYes" type="radio" class="radio required"/>
+									<label for="felonyYes" class="smallRadio">Yes</label>
+									<input name="felony" id="felonyNo" type="radio" checked="true" class="radio" />
+									<label for="felonyNo" class="smallRadio">No</label>
+								</div>
+								
+								<div id="felonyExplain">
+									<label for="explain" id="explainLabel">Explain:</label> </br>
+									<input type="text" name="explain" id="explain" title="enter an explaination"/><br />
+								</div>
+								
+							</div>
+							<div class="column">
+								<label for="middle">Middle Name</label> </br>
+								<input type="text" name="middle" id="middle"/><br />
+								
+								<label for="state">State</label> </br>
+								<input type="text" name="state" id="state" class="required" title="Enter your state"/><br />
+								
+								<label for="myPhone">Phone Number</label> </br>
+								<input type="tel" name="myPhone" id="myPhone" class="required phone" title="Enter your phone number"/><br />
+								
+								<div id="citzenRadio" class="radioButtons">
+									<label class="labelRadio">Are you a U.S citzen?</label><br/>
+									<input name="cot" id="citzenYes" type="radio" class="radio" checked="true"/>
+									<label for="citzenYes" class="smallRadio">Yes</label>
+									<input name="cot" id="citzenNo" type="radio" class="radio"/>
+									<label for="citzenNo" class="smallRadio">No</label>
+								</div>
+								
+								<div id="authorizedRadio" class="radioButtons">
+									<label class="labelRadio">Are you authorized to work in the U.S?</label>
+									<input name="mot" id="authorizedYes" type="radio" class="radio" checked="true"/>
+									<label for="authorizedYes" class="smallRadio">Yes</label>
+									<input name="mot" id="authorizedNo" type="radio" class="radio"/>
+									<label for="authorizedNo" class="smallRadio">No</label>
+								</div>
+							</div> 
+						</div>
+						<input type="button" value="Next page" id="personalSubmit" />
+					</form>
+				</div>
+				
+				
+				
+				<div id="tabs-2" class="tab">
+					<p class="pageDescription">Your Education:</p>
+					<form id="education">
+						<div id="attendHighRadio" class="radioButtons">
+							<label class="labelRadio">Did you attend high school?</label><br/>
+							<input id="attendHighYes" type="radio" class="radio" name="attendHigh">
+							<label for="attendHighYes" class="smallRadio">Yes</label>
+							<input id="attendHighNo" type="radio" class="radio" name="attendHigh" checked="true">
+							<label for="attendHighNo" class="smallRadio">No</label>
+						</div></br>
+						<div class="highTable" id="highSchool">
+							<div class="highColumn">
+								<label for="high">High School</label> </br>
+								<input type="text" name="high" id="high" title="Enter your high school" class="required"/><br />
+								
+								<label for="endHigh">To</label> </br>
+								<input type="text" name="endHigh" id="endHigh" class="date" title="Enter your last day"/><br />
+							</div>
+							
+							<div class="highColumn">
+								<label for="address">Address</label> </br>
+								<input type="text" name="highAddress" id="highAddress" title="Enter your high school's address" class="required"/><br />
+								
+								<div id="highRadio" class="radioButtons">
+									<label class="labelRadio">Did you graduate?</label><br/>
+									<input name="bot" id="highYes" type="radio" class="radio" checked="true">
+									<label for="highYes" class="smallRadio">Yes</label>
+									<input name="bot" id="highNo" type="radio" class="radio">
+									<label for="highNo" class="smallRadio">No</label>
+								</div></br>
+							</div>
+							
+							<div class="highColumn">
+								<label for="startHigh">From</label> </br>
+								<input type="text" name="startHigh" id="startHigh" class="date" title="Enter your starting date"/><br />
+							</div>
+						</div>
+						
+						<div id="attendCollegeRadio" class="radioButtons">
+								<label class="labelRadio">Did you attend college?</label><br/>
+								<input name="cot" id="attendCollegeYes" type="radio" class="radio">
+								<label for="attendCollegeYes" class="smallRadio">Yes</label>
+								<input name="cot" id="attendCollegeNo" type="radio" class="radio" name="bot" checked="true">
+								<label for="attendCollegeNo" class="smallRadio">No</label>
+							</div></br>
+						<div class="collegeTable" id="college">
+							<div class="collegeColumn">
+								<label for="collegeName">College</label> </br>
+								<input type="text" name="collegeLocation" id="collegeName" title="Enter your college's name" class="required"/><br />
+								
+								<label for="endCollege">To</label> </br>
+								<input type="text" name="endCollege" id="endCollege" class="date" title="Enter your last day of college"/><br />
+							</div>
+							
+							<div class="collegeColumn">
+								<label for="collegeAddress">Address</label> </br>
+								<input type="text" name="collegeAddress" id="collgeAddress" title="Enter your college's address" class="required"/><br />
+								
+								<div id="collegeRadio" class="radioButtons">
+									<label class="labelRadio">Did you graduate?</label><br/>
+									<input name="lot" id="collegeYes" type="radio" class="radio required">
+									<label for="collegeYes" class="smallRadio">Yes</label>
+									<input name="lot" id="collegeNo" type="radio" class="radio required" checked="true">
+									<label for="collegeNo" class="smallRadio">No</label>
+								</div></br>
+							</div>
+							
+							<div class="collgeColumn">
+									<label for="startCollege">From</label> </br>
+									<input type="text" name="startCollege" id="startCollege" class="date" title="Enter your last day of college"/><br />
+									
+									<div id="degreeShow">
+										<label for="degree">Degree</label> </br>
+										<input type="text" name="degree" id="degree" title="Enter your degree" class="required"/><br />
+									</div>
+							</div>
+						</div>
+					</form>
+					<input type="button" value="Next page" id="educationSubmit" class="submit ui-button ui-corner-all ui-widget"/>
+				</div>
+				
+				
+				
+				<div id="tabs-3" class="tab">
+					<p class="pageDescription">Your references:</p>
+					<form id="refrences">
+						<div id="refrenceRadio">
+							<label class="labelRadio">How many references do you have?</label><br/>
+							<input name="dot" id="oneRefrence" type="radio" class="radio" checked="true">
+							<label for="oneRefrence" class="smallRadio">One</label>
+							<input name="dot" id="twoRefrence" type="radio" class="radio">
+							<label for="twoRefrence" class="smallRadio">Two</label>
+							<input name="dot" id="threeRefrence" type="radio" class="radio">
+							<label for="threeRefrence" class="smallRadio">Three</label>
+						</div></br>
+						
+						<div id="oneTable">
+							<p class="bigReference">First Reference</p>
+							<div class="referenceTable">
+								<div class="referenceColumn">
+									<label for="firstFull">Full Name</label> </br>
+									<input type="text" name="firstfull" id="firstFull" class="required" title="Enter their full name"/><br />
+									
+									<label for="firstReferenceNumber">Reference Phone Number</label> </br>
+									<input type="tel" name="firstReferenceNumber" id="firstReferenceNumber" class="required phone" title="Enter their number"/><br />
+								</div>
+								<div class="referenceColumn">
+									<label for="firstRelationship">Relationship</label> </br>
+									<input type="text" name="firstRelationship" id="firstRelationship" class="required" title="Enter your relationship"/><br />
+									
+									<label for="firstAddress"> Email Address</label> </br>
+									<input type="text" name="firstAddress" id="firstAddress" class="required email" title="Enter your refrence's email"/><br />
+								</div>
+								<div class="referenceColumn">
+									<label for="firstCompany">Company</label> </br>
+									<input type="text" name="firstCompany" id="firstCompany" class="required" title="Enter your refrence's company"/><br />
+								</div>
+							</div>
+						</div>
+						
+						<div id="twoTable">
+							<p class="bigReference">Second Reference</p>
+							<div class="referenceTable">
+								<div class="referenceColumn">
+									<label for="secondFull">Full Name</label> </br>
+									<input type="text" name="secondFull" id="secondFull" title="Enter their full name" class="two"/><br />
+									<label for="secondReferenceNumber">Reference Phone</br> Number</label> </br>
+									<input type="tel" name="secondReferenceNumber" id="secondReferenceNumber" title="Enter their number" class="required phone"/><br />
+								</div>
+								<div class="referenceColumn">
+									<label for="secondRelationship">Relationship</label> </br>
+									<input type="text" name="secondRelationship" id="secondRelationship" class="required" title="Enter your relationship"/><br />
+									<label for="secondAddress">Email Address</label> </br>
+									<input type="text" name="secondAddress" id="secondAddress" class="required email" title="Enter your refrence's email"/><br />
+								</div>
+								<div class="referenceColumn">
+									<label for="secondCompany">Company</label> </br>
+									<input type="text" name="secondCompany" id="secondCompany" class="required" title="Enter your refrence's company"/><br />
+								</div>
+							</div>
+						</div>
+						
+						<div id="threeTable">
+							<p class="bigReference">Third Reference</p>
+							<div class="referenceTable">
+								<div class="referenceColumn">
+									<label for="thirdFull" >Full Name</label> </br>
+									<input type="text" name="thirdFull" id="thirdFull" title="Enter their full name" class="three"/><br />
+									<label for="thirdReferenceNumber">Reference Phone Number</label> </br>
+									<input type="tel" name="thirdReferenceNumber" id="thirdReferenceNumber" title="Enter their number" class="required phone"/><br />
+								</div>
+								<div class="referenceColumn">
+									<label for="thirdRelationship">Relationship</label> </br>
+									<input type="text" name="thirdRelationship" id="thirdRelationship" class="required" title="Enter your relationship"/><br />
+									<label for="Thirdaddress">Email Address</label> </br>
+									<input type="text" name="thirdAddress" id="thirdAddress" class="required email" title="Enter your refrence's email"/><br />
+								</div>
+								<div class="referenceColumn">
+									<label for="thirdCompany">Company</label> </br>
+									<input type="text" name="thirdCompany" id="thirdCompany" class="required" title="Enter your refrence's company"/><br />
+								</div>
+							</div>
+						</div>
+					</form>
+					<input type="button" value="Next page" id="referencesSubmit" class="submit ui-button ui-corner-all ui-widget"/>
+				</div>
+				
+				<div id="tabs-4" class="tab">
+					<p class="pageDescription">Past jobs:</p>
+					<form id="previous">
+						<div class="table" id="moveCenter">
+							<div class="column">
+								<label for="company">Company</label> </br>
+								<input type="text" name="company" id="company" class="required" title="Enter your past company"/><br />
+								
+								<label for="supervisor">Supervisor</label> </br>
+								<input type="text" name="supervisor" id="supervisor" class="required" title="Enter your past supervisor"/><br />	
+								
+								<label for="endSalary">Ending Salary</label> </br>
+								<input type="text" name="endSalary" id="endSalary" placeholder="$" title="Enter your ending salary" class="required"/><br />
+								
+								<label for="endDate">Ending Date</label> </br>
+								<input type="text" name="endDate" id="endDate" title="Enter your ending date" class="date"/><br />
+							
+							</div>
+							
+							<div class="column">
+								<label for="pastNumber" id="numberLabel">Company Phone <br/>number</label> </br>
+								<input type="tel" name="pastNumber" id="pastNumber" title="Enter your company's number" class="required phone" placeholder="123-456-7890"><br />
+								
+								<label for="jobTitle">Job Title</label> </br>
+								<input type="text" name="jobTitle" id="jobTitle" title="Enter your job title" class="required"/><br />
+								
+								<label for="responsibilities">Responsibilities</label> </br>
+								<input type="text" name="responsibilities" id="responsibilities" title="Enter your job responsibilities" class="required"/><br />
+								
+								<label for="reason">Reason for leaving</label> </br>
+								<input type="text" name="reason" id="reason" title="Enter your reason for leaving" class="required"/><br />
+						
+							
+							</div>
+							
+							<div class="column">
+								<label for="pastAddress">Company Address</label> </br>
+								<input type="text" name="pastAddress" id="pastAddress" title="Enter your company's address" class="required"/><br />
+								
+								<label for="startSalary">Starting Salary</label> </br>
+								<input type="text" name="startSalary" id="startSalary" placeholder="$" title="Enter your starting salary" class="required"/><br />
+								
+								<label for="startDate">Starting Date</label> </br>
+								<input type="text" name="startDate" id="startDate" title="Enter your starting date" class="date"/><br />
+						
+								<div id="request">
+									<label class="labelRadio">May we contact your previous supervisor for a reference?</label>
+									<input type="radio" name="contact" id="contactYes" class="radio" checked="true" title="Choose an option">
+									<label for="contactYes" class="smallRadio">Yes</label>
+									<input type="radio" name="contact" id="contactNo" class="radio" title="Choose an option">
+									<label for="contactNo" class="smallRadio">No</label>
+								</div>
+							</div>
+						</div>
+						<input type="button" value="Submit" id="previousSubmit" />
+					</form>
+				</div>
+						
+						
+					
+				<div id="tabs-5" class="tab">
+					<p class="pageDescription">Military Service:</p>
+					<form id="military">
+						<div id="service">
+							<label class="labelRadio">Have you served in the military?</label><br/>
+							<input type="radio" name="dot" id="militaryYes" class="radio">
+							<label for="militaryYes" class="smallRadio">Yes</label>
+							<input type="radio" name="dot" id="militaryNo" class="radio" checked="true">
+							<label for="militaryNo" class="smallRadio">No</label>
+						</div>
+						
+						<div class="table" id="armyInfo">
+							<div class="column">
+								<label for="branch">Branch</label> </br>
+								<input type="text" name="branch" id="branch" title="Enter a branch" class="required"/><br />
+								
+								<label for="rank">Rank at Discharge</label> </br>
+								<input type="text" name="rank" id="rank" title="Enter a rank" class="required"/><br />
+								
+								<div id="whyExplain">
+									<label for="why">Explain:</label> </br>
+									<input type="text" name="why" id="why" title="Enter an explaination"/><br />
+								</div>
+							</div>
+							<div class="column">
+								<label for="armyfrom">From</label> </br>
+								<input type="text" name="armyfrom" id="armyfrom" title="Enter a starting date" class="date"/><br />
+								
+								<label for="type">Type of Discharge</label> </br>
+								<input type="text" name="type" id="type" title="Enter a type of discharge" class="required"/><br />
+								
+							</div>
+							<div class="column">
+								<label for="armyTo">To</label> </br>
+								<input type="text" name="armyTo" id="armyTo" title="Enter an ending date" class="date"/><br />
+								
+								<div id="honorable">
+									<label class="labelRadio">Was your discharge other than honorable?</label>
+									<input type="radio" name="discharge" id="dischargeYes" class="radio">
+									<label for="dischargeYes" class="smallRadio">Yes</label>
+									<input type="radio" name="discharge" id="dischargeNo" class="radio" checked="true">
+									<label for="dischargeNo" class="smallRadio">No</label>
+								</div>
+							</div>
+						</div>
+						<input type="button" value="Submit" id="militarySubmit" />
+					</form>
+				</div>
+					
+				<div id="tabs-6" class="tab">
+					<form id="final">
+						<p id="agreement" class="pageDescription">Statement of Agreement</p>
+						<p id="finalP">I certify that my answers are true and complete to the best of my knowledge. If this application leads to employment, I understand that false or misleading information in my application or interview may result in my release.</p>
+						<div class="table">
+							<div class="column">
+								<label for="signature">Signature</label> </br>
+								<input type="text" name="signature" id="signature" class="required" title="Please enter your signature"/><br />
+							</div>
+							<div class="column">
+								<label for="finalDate">Date</label> </br>
+								<input type="text" name="finalDate" id="finalDate" class="required date" title="Please enter the date"/><br />
+							</div>
+						</div>
+						<input type="button" value="Submit" id="finalSubmit" />
+					</form>
+					<div id="confirm">
+						<h3>Are you sure?</h3>
+						<p>By submitting this form, you are certifying that the information you provided is true and complete. </p>
+					</div>
+				</div>
+				
+				<div id="thanksPage" class="tab">
+					<p id="thanks" class="pageDescription" >Thanks for Submitting!</p>
+					<p id="thanksInfo">We will get back to you in the next two to three weeks. </br> The inspiration for this website was taken from the Hiawatha Public Library. Here is the link https://hiawathapubliclibrary.org/</p>
+				</div>
+			</div>
+		</div>
+		<img id="footer" src="css/images/footer.png">
+	</body>
+</html>
